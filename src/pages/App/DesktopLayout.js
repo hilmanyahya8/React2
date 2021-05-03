@@ -50,7 +50,7 @@ export const DesktopLayout = () => {
                         color: "#413d3e",
                     }}
                 >
-                    Boilerplate
+                    Kelongan.id
                 </Paragraph>
             </div>
             <MenuList closeLeftDrawer={() => {
@@ -105,7 +105,7 @@ export const DesktopLayout = () => {
                     }
                     title={
                         <Text>
-                            info@bangun-kreatif.com
+                            Kelongan.id@gmail.com
                             {/*{store.userData.email}{" "}*/}
                             <Paragraph style={{fontWeight: 400}} type={"secondary-dark"}>
                                 Administrator

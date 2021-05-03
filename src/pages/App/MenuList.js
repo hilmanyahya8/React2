@@ -45,6 +45,12 @@ export const MenuList = observer((props) => {
 					<span>About</span>
 				</Link>
 			</Menu.Item>
+			<Menu.Item key="item">
+				<Link to={'/app/Item'}>
+					<CalendarOutlined/>
+					<span>Item</span>
+				</Link>
+			</Menu.Item>
 			<Menu.Divider style={{background: "transparent", paddingTop: 15}}/>
 		</Menu>
 	);
