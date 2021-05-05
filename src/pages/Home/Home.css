@@ -1,5 +1,5 @@
 carousel-caption h5 {
-    font-weight: bold;
+    font-weight: small;
     font-size: 1.2em; /* small size since this is the default in Bootstrap */
     text-align:center;
 }

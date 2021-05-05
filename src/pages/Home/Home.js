@@ -1,7 +1,8 @@
 import React from "react";
 import { PageHeader } from "antd";
 import "./Home.css"
-import { Slider } from "./Slider";
+import { Slider } from "./slider";
+import { card } from "./card";
 
 export const Home = () => {
   return (

@@ -7,21 +7,18 @@ export const Slider = () => {
         {
           key: 1,
           image: img1,
-          text: '“Music is the moonlight in the gloomy night of life.”',
-          subtext: '-John Paul Friedrich Richter-',
+          text: '“fashion buatan lokal tidak kalah dengan buatan luar negeri lhoo ”',
           active: true
         },
         {
           key: 2,
           image: img2,
-          text: '“Music is the literature of the heart; it commences where speech ends.”',
-          subtext: '-Alphonse de Lamartine-'
+          text: '“Beras adalah sumber dari makanan pokok semua orang.”',
         },
         {
           key: 3,
           image: img3,
-          text: '“Music expresses feeling and thought, without language; it was below and before speech, and it is above and beyond all words.”',
-          subtext: '-Robert G. Ingersoll-'
+          text: '“cintailah produk dalam negeri karena tidak kalah berkelas dengan produk luar negeri”',
         },
       ];
       
