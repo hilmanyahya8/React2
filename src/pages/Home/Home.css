@@ -12,6 +12,10 @@ carousel-caption h5 {
 .carousel-item {
     width:100%; 
     height:500px;
+
+}
+.ant-card-body{
+  position: top;
 }
 
 @media (min-width: 576px) { 

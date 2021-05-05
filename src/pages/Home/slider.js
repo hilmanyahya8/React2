@@ -38,7 +38,7 @@ export const Slider = () => {
                   return (
                     <div className={"carousel-item " + isDataActive} key={slide.key}>
                       <img src={slide.image}  class="d-block w-100" alt="..."></img>
-                      <div className="carousel-caption d-md-block bg-danger">
+                      <div className="carousel-caption d-md-block bg-warning">
                         <h5>{slide.text}</h5>
                         <p>{slide.subtext}</p>
                       </div>
