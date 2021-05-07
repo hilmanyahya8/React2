@@ -15,9 +15,10 @@ carousel-caption h5 {
 
 }
 .ant-card-body{
-  position: top;
-}
+  flex-wrap: wrap;
+  justify-content: center;
 
+}
 @media (min-width: 576px) { 
   .carousel-caption h5 { font-size: 1.3em;}
   .carousel-caption p {font-size: 1.1em;}  

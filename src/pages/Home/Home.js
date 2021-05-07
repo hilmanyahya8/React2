@@ -1,13 +1,16 @@
 import React from "react";
-import { PageHeader, Card, Avatar } from "antd";
+import { PageHeader, Card, Avatar, } from "antd";
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import "./Home.css"
+import "./Home.css";
 import { Slider } from "./slider";
-import { img1 } from '../Item/img/img5.png';
-// import {img3} from '../Item/img/img4.jfif'
-// import { img2 } from '../Item/img/img6.jpg'
+import  img1  from '../Item/img/img5.png';
+import img2 from '../Item/img/img6.jpg';
+import img3 from '../Item/img/img7.jpg';
+import { AppFeature } from "./Feature";
 
 const { Meta } = Card;
+
+
 export const Home = () => {
   return (
     <div>
@@ -55,7 +58,7 @@ export const Home = () => {
         cover={
           <img
             alt="example"
-            src={img1}
+            src={img2}
           />
         }
         actions={[
@@ -71,8 +74,29 @@ export const Home = () => {
         />
       </Card>,
       </div>
+      <div>
+      <Card
+        style={{ width: 300 }}
+        cover={
+          <img
+            alt="example"
+            src={img3}
+          />
+        }
+        actions={[
+          <SettingOutlined key="setting" />,
+          <EditOutlined key="message" />,
+          <EllipsisOutlined key="ellipsis" />,
+        ]}
+      >
+        <Meta
+          avatar={<Avatar src="../Item/img/img7.jpg" />}
+          title="Card title"
+          description="This is the description"
+        />
+      </Card>,
+      </div>
     </div>
-   
-  );
+  )
 };
 

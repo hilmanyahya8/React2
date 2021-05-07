@@ -20,7 +20,7 @@ export const Slider = () => {
           image: img3,
           text: '“cintailah produk dalam negeri karena tidak kalah berkelas dengan produk luar negeri”',
         },
-      ];
+      ]
       
     return (
         <div className="row">
