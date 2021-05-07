@@ -1,18 +1,56 @@
 import React from "react";
-import {PageHeader} from "antd";
+import { Row, Col, Image, Typography,  Button } from "antd";
+import {Link} from "react-router-dom";
+import img1 from "../Item/img/18.jpg";
 
-export const About = () => {
-    return <div>
-        <PageHeader
+const { Title, Paragraph } = Typography;
+export const Item = () => {
+  return (
+    <div>
+      <Row gutter={24}>
+        <Col span={12}>
+          <Image
             style={{
-                padding: 0,
-                margin: 0,
-                height: 40,
-                backgroundColor: "transparent",
+              width: "100%",
             }}
-            title={"About"}
-        >
-        </PageHeader>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut recusandae velit! Consequatur corporis, eum fuga, harum incidunt laboriosam minus necessitatibus neque non nostrum pariatur tempore. Dignissimos impedit rem tempora!
+            src={img1}
+          />
+        </Col>
+        <Col span={12}>
+          <Title style= {{fontWeight: "Bold"}}>Detail Produk</Title>
+          <Paragraph style= {{marginLeft: "20px" }}>
+            Patung adalah benda tiga dimensi karya manusia yang diakui secara
+            khusus sebagai suatu karya seni. Orang yang menciptakan patung
+            disebut pematung. Tujuan penciptaan patung adalah untuk menghasilkan
+            karya seni yang dapat bertahan selama mungkin. Karenanya, patung
+            biasanya dibuat dengan menggunakan bahan yang tahan lama dan sering
+            kali mahal, terutama dari perunggu dan batu seperti marmer, kapur,
+            dan granit. Kadang, walaupun sangat jarang, digunakan pula bahan
+            berharga seperti emas, perak, jade, dan gading. Bahan yang lebih
+            umum dan tidak terlalu mahal digunakan untuk tujuan yang lebih luar,
+            termasuk kayu, keramik, dan logam. Bahan manufaktur seperti resin
+            juga kerap kali digunakan karena durabilitas dan harganya yang
+            relatif murah. Pada masa lalu patung dijadikan sebagai berhala,
+            simbol Tuhan atau Dewa yang disembah. Tapi seiring dengan makin
+            rasionalnya cara berpikir manusia, maka patung tidak lagi dijadikan
+            berhala melainkan hanya sebagai karya seni belaka. Fenomena
+            pemberhalaan patung ini terjadi pada agama-agama atau
+            kepercayaan-kepercayaan yang politeisme seperti terjadi di Arab
+            sebelum munculnya agama samawi.
+          </Paragraph>
+          <Link to={"/app/item"}>
+            <Button
+              className="button"
+              style={{ display: "flex", alignItems: "center"}}
+              type="primary"
+            >
+              Tambah Cart
+            </Button>
+          </Link>
+        </Col>
+      </Row>
     </div>
+  );
 };
+
+export default Item;

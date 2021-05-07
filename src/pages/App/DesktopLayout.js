@@ -34,6 +34,7 @@ export const DesktopLayout = () => {
                 position: "fixed",
                 top: 0,
                 zIndex: 10,
+                backgroundColor: "#ededeb"
             }}
         >
             <div style={{

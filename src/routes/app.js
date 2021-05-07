@@ -4,6 +4,7 @@ import {PublicRoute} from "../component/PublicRoute";
 import {Login} from "../pages/Login/Login";
 import {App} from "../pages/App/App";
 import {Home} from "../pages/Home/Home";
+import {Item} from "../pages/Item/Item";
 import {About} from "../pages/About/About";
 
 export const AppRoute = () => {
@@ -11,8 +12,11 @@ export const AppRoute = () => {
         <Route path={"/app/home"}>
             <Home/>
         </Route>
-        <Route path={"/app/about"}>
-            <About/>
+        <Route path={"/app/item"}>
+            <Item />
+        </Route>
+        <Route path={"/app/About"}>
+            <About />
         </Route>
         <Route path="/app" exact>
             <Redirect to={'/app/home'} />
